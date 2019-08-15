@@ -8,7 +8,7 @@ export const getData = () => {
   return dispatch => {
     dispatch({ type: FETCH_BEERLIST_DATA_START });
     axios
-      .get('https://api.punkapi.com/v2/beers/')
+      .get('https://api.punkapi.com/v2/beers?page=2')
       .then(res => {
         dispatch({ type: FETCH_BEERLIST_DATA_SUCCESS, payload: res.data })
       })
