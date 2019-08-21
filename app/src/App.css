@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+  background-image: url(https://backgroundcheckall.com/wp-content/uploads/2017/12/craft-beer-background-11.jpg);
+  background-size: 100%;
+  min-height: 1000px;
+}
+
+.header {
+  padding: 25px;
+  color: #fff;
+  height: 100%;
+}
+
+.beer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+}
