@@ -1,13 +1,14 @@
 .App {
   text-align: center;
-  background-image: url(https://backgroundcheckall.com/wp-content/uploads/2017/12/craft-beer-background-11.jpg);
-  background-size: 100%;
-  min-height: 1000px;
-}
+  background: #FDC830;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 700px;
+  }
 
 .header {
   padding: 25px;
-  color: #fff;
+  color: rgb(36, 35, 35);
   height: 100%;
 }
 
@@ -17,3 +18,4 @@
   flex-wrap: wrap;
   height: 100%;
 }
+

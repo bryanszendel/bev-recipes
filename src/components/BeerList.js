@@ -1,10 +1,27 @@
 import React from 'react';
-import { Card, Image, Button } from 'semantic-ui-react'
+import { Card, Image } from 'semantic-ui-react'
 import { connect } from 'react-redux'
+
+import styled, { css } from 'styled-components'
 
 import { getData } from '../actions'
 import Loader from 'react-loader-spinner'
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
+
+const Button = styled.button`background: transparent;
+border-radius: 3px;
+border: 2px solid rgb(36, 35, 35);
+color: rgb(36, 35, 35);
+margin: 0.5em 1em;
+padding: 0.25em 1em;
+cursor: pointer;
+};
+
+${props => props.primary && css`
+  background: palevioletred;
+  color: white;
+`}
+`
 
 const BeerList = (props) => {
   return (
